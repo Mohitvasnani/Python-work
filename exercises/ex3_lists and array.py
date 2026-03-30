@@ -32,5 +32,19 @@ print(searcht(nums,target))
 
 arr =[3, 1, 4, 1, 5, 9, 2, 6]
 def minsum(arr,k):
+    plus = sum(arr[:k])
+    min_sum = plus
+    for a in range(k,len(arr)):
+        plus += arr[a]
+        plus -= arr[a-k]
+        if  min_sum> plus :
+            min_sum = plus
+
+    return min_sum
+
+
+print(minsum(arr, 4))
+
     
+
 
