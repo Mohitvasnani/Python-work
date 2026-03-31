@@ -12,7 +12,7 @@ def armstrong_num(n):
     temp = n
     while(temp>0):
         digit = temp%10
-        sum += digit**count
+        sum = sum + digit**count
         temp = temp//10
     return sum == n
 print(armstrong_num(153))
