@@ -12,4 +12,3 @@ def fib(num):
      return e
 
 print(fib())
-
